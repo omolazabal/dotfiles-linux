@@ -44,14 +44,8 @@ set backspace=indent,eol,start
 set ignorecase
 set smartcase
 
-" Clipboard
-set clipboard=unnamed
-
 " UTF-8 support
 set encoding=utf-8
-
-" Mouse
-set mouse=a
 
 " Splits
 set splitbelow
