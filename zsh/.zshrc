@@ -31,16 +31,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Functions
-mkcdir() { mkdir $1; cd $1; }
 backup() { cp $1{,.bak}; }
 paninit() { cp ~/dotfiles/pandoc/* .; make init;}
-mux() {
-    pgrep -vxq tmux;
-    tmux new -d -s delete-me;
-    tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh;
-    tmux kill-session -t delete-me;
-    tmux attach || tmux attach;
-}
 
 # Alias
 alias ngrok=$HOME/.ngrok2/ngrok
